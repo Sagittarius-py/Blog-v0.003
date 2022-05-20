@@ -1,0 +1,6 @@
+{% extends "index.html" %} {% block content %}
+<h1>cokolwiek</h1>
+
+{% for p in photos %}
+<img src="{{ p.images.url }}" class="post-detail-img" />
+{% endfor %} {%endblock%}

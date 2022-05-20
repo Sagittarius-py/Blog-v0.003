@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+    <title>Filip Sieniawski Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="{% static '/style.css' %}" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="{% static 'favicon.ico' %}"
+    />
+  </head>
+
+  <body>
+    <div id="nav-bar">
+      <h1 id="nav-title">Pierdolcie sie</h1>
+      <div id="nav-btn-container">
+        <button class="nav-btn">przycisk 1</button>
+        <button class="nav-btn">przycisk 2</button>
+        <button class="nav-btn">przycisk 3</button>
+      </div>
+    </div>
+    {% block content %}{% endblock content %}
+    <footer></footer>
+  </body>
+</html>

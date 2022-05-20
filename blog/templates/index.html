@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="all-container">
+  <div id="post-container">
+    {% for post in posts %}
+    <div class="post-body">
+      <div>
+        {% if post.title_image %}
+        <div
+          class="post-cover"
+          style="background-image: url('{{ post.title_image.url }}')"
+        ></div>
+        {% endif %}
+
+        <h2 class="post-title">{{ post.title }}</h2>
+        <p class="post-date">{{ post.created_on}}</p>
+        <p class="post-text">{{post.content|slice:":40" }}...</p>
+        <a href="{% url 'post_detail' post.slug  %}" class="post-link"
+          >Read More &rarr;</a
+        >
+      </div>
+      cokolwiek
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{%endblock%}

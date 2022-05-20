@@ -17,5 +17,6 @@ from blog import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.PostList, name='home'),
-    path('<slug:slug>/', views.PostDetail, name='post_detail')
+    path('<slug:slug>/', views.PostDetail, name='post_detail'),
+    path('register', views.register_request, name="register")
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

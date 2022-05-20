@@ -94,14 +94,15 @@ img {
   height: 40px;
   border-radius: 20px;
   background: none;
-  background: rgba( 230, 230, 255, 1 );
+  background: none;
   border: none;
+  
+  color: #fff;
   transition: 0.5s;
 }
 
 .nav-btn:hover{
   background: rgba( 230, 230, 255, 0.5 );
-  border: solid 1px black;
   transition: 0.5s;
 
 }
@@ -113,6 +114,11 @@ img {
     font-size: 10pt;
   
   }
+}
+
+.profile{
+  width: 100px;
+  height: 50px;
 }
 
 /*! styl kart, ogół bloga - index.html */
@@ -170,6 +176,12 @@ img {
   height: 170px;
   border-radius: 20px 20px 0px 0px;
   background-size: cover;  
+}
+.post-cover-paceolder {
+  width: 100%;
+  height: 170px;
+  border-radius: 20px 20px 0px 0px;
+  background-image: url("./img/transparent.png");
 }
 
 .post-title {
